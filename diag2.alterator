@@ -1,0 +1,34 @@
+[Alterator Entry]
+Name=diagnostic_tool2
+Name[ru_RU]=диагностический инструмент 2
+Name[en_EN]=diagnostic tool 2
+
+Description=diag_2 default description
+Description[ru_RU]=описание диагностического инструмента2
+Description[en_EN]=description diag tool 2
+
+Icon=system-run
+
+[test1]
+Name=test1
+Name[ru_RU]=тест1 диагностического инструмента 2
+Name[en_US]=test1 of diagnostic tool 2
+Description=default description of test 1 in diagnostic tool 2
+Description[ru_RU]=описание теста 1 диагностического инструмента 2
+Description[en_US]=default description of test 1 in diagnostic tool 2
+
+[test2]
+Name=test2
+Name[ru_RU]=тест2 диагностического инструмента 2
+Name[en_US]=test2 of diagnostic tool 2
+Description=default description of test 2 in diagnostic tool 2
+Description[ru_RU]=описание теста 2 диагностического инструмента 2
+Description[en_US]=default description of test 2 in diagnostic tool 2
+
+[test3]
+Name=test3
+Name[ru_RU]=тест3 диагностического инструмента 2
+Name[en_US]=test3 of diagnostic tool 2
+Description=default description of test 3 in diagnostic tool 2
+Description[ru_RU]=описание теста 3 диагностического инструмента 2
+Description[en_US]=default description of test 3 in diagnostic tool 2
