@@ -21,19 +21,19 @@ Test tools for ADT.
 
 %install
 mkdir -p %buildroot%_libexecdir/%name
-mkdir -p %buildroot%_datadir/alterator/backends
+mkdir -p %buildroot%_sysconfdir/alterator/backends
 mkdir -p %buildroot%_datadir/alterator/objects/%name
 
 install -v -p -m 755 -D adt-test-tool %buildroot%_libexecdir/%name
-install -v -p -m 644 -D diag.backend %buildroot%_datadir/alterator/backends
-install -v -p -m 644 -D diag2.backend %buildroot%_datadir/alterator/backends
+install -v -p -m 644 -D diag.backend %buildroot%_sysconfdir/alterator/backends
+install -v -p -m 644 -D diag2.backend %buildroot%_sysconfdir/alterator/backends
 install -v -p -m 655 -D diag.alterator %buildroot%_datadir/alterator/objects/%name
 install -v -p -m 655 -D diag2.alterator %buildroot%_datadir/alterator/objects/%name
 
 %files
 %_libexecdir/%name/adt-test-tool
-%_datadir/alterator/backends/diag.backend
-%_datadir/alterator/backends/diag2.backend
+%_sysconfdir/alterator/backends/diag.backend
+%_sysconfdir/alterator/backends/diag2.backend
 %_datadir/alterator/objects/%name/diag.alterator
 %_datadir/alterator/objects/%name/diag2.alterator
 
