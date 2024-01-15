@@ -21,3 +21,7 @@ execute = /usr/lib/adt-test-tools/adt-test-tool -l
 stdout_strings = enabled
 action_id = List
 
+[Report]
+execute = /usr/lib/adt-test-tools/adt-test-tool -r
+stdout_bytes = enabled
+action_id = Report

@@ -12,9 +12,10 @@ show_usage() {
     echo "<check/test-function-name> must be a function name from the list of tests"
     echo ""
     echo "Options:"
-    echo "  -h, --help      This message"
+    echo "  -h, --help         This message"
     echo "  -V, --version      Display version number"
-    echo "  -l, --list      List of tests"
+    echo "  -l, --list         List of tests"
+    echo "  -r, --report       Send report"
     echo ""
     return
 }
@@ -25,19 +26,38 @@ print_version() {
 }
 
 test1() {
-	echo "Test 1:"
+	echo "Test 1: begin"
+	sleep 1
+	echo "Test 2: end"
 	exit $?
 }
 
 test2() {
 #This test if failed for testing 
-	echo "Test 2:"
+	echo "Test 2: begin"
+	sleep 1
+	echo "Test 2: failed" >&2
 	exit 1
 }
 
 test3() {
-	echo "Test 2:"
+	echo "Test 3: begin"
+	sleep 1
+	echo "Test 3: end"
 	exit $?
+}
+
+report() {
+    current_date=$(date +"%Y-%m-%d_%H:%M")
+    filename="report_$current_date.txt"
+    archive_name="report_$current_date.zip"
+	cat >"$filename" <<EOF
+Begin report:
+Body of report:
+End of report:
+EOF
+    zip -mq "$archive_name" $filename
+    cat $archive_name
 }
 
 if [ "$#" -eq 1 ]
@@ -48,6 +68,8 @@ then
     -l | --list) listcmd=1
     ;;
     -v | --version) print_version
+    ;;
+    -r | --report) report
     ;;
     test1) test1
     ;;
