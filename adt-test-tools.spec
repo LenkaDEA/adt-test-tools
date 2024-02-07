@@ -1,7 +1,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: adt-test-tools
-Version: 0.1.0
+Version: 0.1.1
 Release: alt1
 
 Summary: Test tools for ADT.
@@ -38,5 +38,8 @@ install -v -p -m 655 -D diag2.alterator %buildroot%_datadir/alterator/objects/%n
 %_datadir/alterator/objects/%name/diag2.alterator
 
 %changelog
+* Wed Feb 07 2024 Aleksey Saprunov <sav@altlinux.org> 0.1.1-alt1
+- add pauses during simulating tests
+
 * Tue Dec 12 2023 Aleksey Saprunov <sav@altlinux.org> 0.1.0-alt1
 - initial build
