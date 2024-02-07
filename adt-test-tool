@@ -27,22 +27,40 @@ print_version() {
 
 test1() {
 	echo "Test 1: begin"
-	sleep 1
-	echo "Test 2: end"
+	sleep 0.1
+	for(( i=0; i<10; i++ ))
+	do
+	    echo "Test 1 : step $i"
+	    sleep 0.5
+	done
+	sleep 0.1
+	echo "Test 1: end"
 	exit $?
 }
 
 test2() {
 #This test if failed for testing 
 	echo "Test 2: begin"
-	sleep 1
+	sleep 0.1
+	for(( i=0; i<10; i++ ))
+	do
+	    echo "Test 2 : step $i"
+	    sleep 0.5
+	done
+	sleep 0.1
 	echo "Test 2: failed" >&2
 	exit 1
 }
 
 test3() {
 	echo "Test 3: begin"
-	sleep 1
+	sleep 0.1
+	for(( i=0; i<10; i++ ))
+	do
+	    echo "Test 3 : step $i"
+	    sleep 0.5
+	done
+	sleep 0.1
 	echo "Test 3: end"
 	exit $?
 }
