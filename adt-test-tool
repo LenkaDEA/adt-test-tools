@@ -67,15 +67,16 @@ test3() {
 
 report() {
     current_date=$(date +"%Y-%m-%d_%H:%M")
-    filename="report_$current_date.txt"
-    archive_name="report_$current_date.zip"
-	cat >"$filename" <<EOF
+    filename="/tmp/report_$current_date.txt"
+    archive_name="/tmp/report_$current_date.zip"
+	cat >"${filename}" <<EOF
 Begin report:
 Body of report:
 End of report:
 EOF
-    zip -mq "$archive_name" $filename
-    cat $archive_name
+    zip -mqj "${archive_name}" "$filename"
+    cat "${archive_name}"
+    rm -rf "${archive_name}"
 }
 
 if [ "$#" -eq 1 ]
