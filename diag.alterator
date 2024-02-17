@@ -8,6 +8,7 @@ Comment=diag_1 default description
 Comment[ru_RU]=описание диагностического инструмента1
 Comment[en_EN]=description diag tool
 
+ReportSuffix=zip
 Icon=system-run
 
 [test1]
