@@ -1,36 +1,40 @@
 [Alterator Entry]
-Type=diag1
 Name=diagnostic_tool
-Name[ru_RU]=диагностический инструмент
-Name[en_EN]=diagnostic tool
+Type=Diag
+DisplayName=default name of diagnostic tool
+DisplayName[ru_RU]=диагностический инструмент
+DisplayName[en_EN]=diagnostic tool
 
 Comment=diag_1 default description
 Comment[ru_RU]=описание диагностического инструмента1
 Comment[en_EN]=description diag tool
 
-ReportSuffix=zip
 Icon=system-run
+ReportSuffix=zip
 
 [test1]
 Name=test1
-Name[ru_RU]=тест1 диагностического инструмента 1
-Name[en_US]=test1 of diagnostic tool 1
+DisplayName=default name of test1 of diagnostic tool 1
+DisplayName[ru_RU]=тест1 диагностического инструмента 1
+DisplayName[en_US]=test1 of diagnostic tool 1
 Comment=default description of test 1 in diagnostic tool 1
 Comment[ru_RU]=описание теста 1 диагностического инструмента 1
 Comment[en_US]=default description of test 1 in diagnostic tool 1
 
 [test2]
 Name=test2
-Name[ru_RU]=тест2 диагностического инструмента 1
-Name[en_US]=test2 of diagnostic tool 1
+DisplayName=default name of test2 of diagnostic tool 1
+DisplayName[ru_RU]=тест2 диагностического инструмента 1
+DisplayName[en_US]=test2 of diagnostic tool 1
 Comment=default description of test 2 in diagnostic tool 1
 Comment[ru_RU]=описание теста 2 диагностического инструмента 1
 Comment[en_US]=default description of test 2 in diagnostic tool 1
 
 [test3]
 Name=test3
-Name[ru_RU]=тест3 диагностического инструмента 1
-Name[en_US]=test3 of diagnostic tool 1
+DisplayName=default name of test3
+DisplayName[ru_RU]=тест3 диагностического инструмента 1
+DisplayName[en_US]=test3 of diagnostic tool 1
 Comment=default description of test 3 in diagnostic tool 1
 Comment[ru_RU]=описание теста 3 диагностического инструмента 1
 Comment[en_US]=default description of test 3 in diagnostic tool 1

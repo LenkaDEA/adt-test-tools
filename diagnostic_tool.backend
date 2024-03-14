@@ -5,7 +5,7 @@ Name = diagnostic_tool
 Interface = diag1
 
 [Info]
-execute = cat /usr/share/alterator/objects/adt-test-tools/diag.alterator
+execute = cat /usr/share/alterator/diagnostic_tool/diagnostic_tool.diag
 stdout_bytes = enabled
 thread_limit = 3
 action_id = Info
