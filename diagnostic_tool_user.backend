@@ -1,0 +1,27 @@
+[Alterator Entry]
+Type = Backend
+Module = executor
+Name = diagnostic_tool_user
+Interface = diag1
+
+[Info]
+execute = cat /usr/share/alterator/diagnostic_tool_user/diagnostic_tool_user.diag
+stdout_bytes = enabled
+thread_limit = 3
+action_id = Info
+
+[Run]
+execute = /usr/lib/adt-test-tools/adt-test-tool-user {param}
+stdout_signal_name = diag1_stdout_signal
+stderr_signal_name = diag1_stderr_signal
+action_id = Run
+
+[List]
+execute = /usr/lib/adt-test-tools/adt-test-tool-user -l
+stdout_strings = enabled
+action_id = List
+
+[Report]
+execute = /usr/lib/adt-test-tools/adt-test-tool-user -r
+stdout_bytes = enabled
+action_id = Report
