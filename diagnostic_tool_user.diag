@@ -1,5 +1,5 @@
 [Alterator Entry]
-Name=diagnostic_tool_user
+Name=diagnostic_tool
 Type=Diag
 DisplayName=default name of diagnostic tool user
 DisplayName[ru_RU]=диагностический инструмент user
