@@ -1,0 +1,40 @@
+[Alterator Entry]
+Name=diagnostic_tool_user
+Type=Diag
+DisplayName=default name of diagnostic tool user
+DisplayName[ru_RU]=диагностический инструмент user
+DisplayName[en_EN]=diagnostic tool user
+
+Comment=diag_user default description user
+Comment[ru_RU]=описание диагностического инструмента user
+Comment[en_EN]=description diag tool user
+
+Icon=system-run
+ReportSuffix=zip
+
+[test1]
+Name=test1_user
+DisplayName=default name of test1_user of diagnostic tool user
+DisplayName[ru_RU]=тест1_user диагностического инструмента user
+DisplayName[en_US]=test1_user of diagnostic tool user
+Comment=default description of test 1 in diagnostic tool user
+Comment[ru_RU]=описание теста 1 диагностического инструмента user
+Comment[en_US]=default description of test 1 in diagnostic tool user
+
+[test2]
+Name=test2_user
+DisplayName=default name of test2_user of diagnostic tool user
+DisplayName[ru_RU]=тест2_user диагностического инструмента user
+DisplayName[en_US]=test2_user of diagnostic tool user
+Comment=default description of test 2 in diagnostic tool user
+Comment[ru_RU]=описание теста 2 диагностического инструмента user
+Comment[en_US]=default description of test 2 in diagnostic tool user
+
+[test3]
+Name=test3_user
+DisplayName=default name of test3_user of diagnostic tool user
+DisplayName[ru_RU]=тест3_user диагностического инструмента user
+DisplayName[en_US]=test3_user of diagnostic tool user
+Comment=default description of test 3 in diagnostic tool user
+Comment[ru_RU]=описание теста 3 диагностического инструмента user
+Comment[en_US]=default description of test 3 in diagnostic tool user
