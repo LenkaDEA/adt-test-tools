@@ -1,7 +1,7 @@
 %define _unpackaged_files_terminate_build 1
 
 Name: adt-test-tools
-Version: 0.1.4
+Version: 0.1.5
 Release: alt1
 
 Summary: Test tools for ADT.
@@ -47,6 +47,9 @@ install -v -p -m 644 -D diagnostic_tool_user.diag %buildroot%_datadir/alterator/
 %_datadir/alterator/diagnostic_tool_user/diagnostic_tool_user.diag
 
 %changelog
+* Mon Aug 26 2024 Elena Dyatlenko <lenka@altlinux.org> 0.1.5-alt1
+- add diag on session bus
+
 * Thu Mar 14 2024 Aleksey Saprunov <sav@altlinux.org> 0.1.4-alt1
 - aligned with specifications
 
