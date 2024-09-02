@@ -2,7 +2,7 @@
 
 Name: adt-test-tools
 Version: 0.1.6
-Release: alt1
+Release: alt2
 
 Summary: Test tools for ADT.
 License: GPLv2+
@@ -73,6 +73,9 @@ install -v -p -m 644 -D diagnostic_tool3.diag %buildroot%_datadir/alterator/diag
 %_datadir/alterator/diagnostic_tool3/diagnostic_tool3.diag
 
 %changelog
+* Mon Sep 02 2024 Elena Dyatlenko <lenka@altlinux.org> 0.1.6-alt2
+- fix: fix path diagnostic_tool2_user
+
 * Wed Aug 28 2024 Elena Dyatlenko <lenka@altlinux.org> 0.1.6-alt1
 - add diag3 on session bus
 - add diag and diag2 session bus
