@@ -5,7 +5,7 @@ Name = diagnostic_tool2
 Interface = diag1
 
 [Info]
-execute = cat /usr/share/alterator/diagnostic_tool3/diagnostic_tool2_user.diag
+execute = cat /usr/share/alterator/diagnostic_tool2_user/diagnostic_tool2_user.diag
 stdout_bytes = enabled
 thread_limit = 3
 action_id = Info
