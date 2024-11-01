@@ -5,6 +5,8 @@ DisplayName=default name of diagnostic tool
 DisplayName[ru_RU]=диагностический инструмент
 DisplayName[en_EN]=diagnostic tool
 
+Category=adtCategory
+
 Comment=diag_1 default description
 Comment[ru_RU]=описание диагностического инструмента1
 Comment[en_EN]=description diag tool
